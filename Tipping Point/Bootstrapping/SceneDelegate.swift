@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
+        window?.overrideUserInterfaceStyle = .dark
         let mainVC = ViewController()
         window?.rootViewController = mainVC
         window?.makeKeyAndVisible()

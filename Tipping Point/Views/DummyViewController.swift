@@ -10,16 +10,26 @@ import UIToolbox
 
 /// A dumm view controller used to test certain navigation components.
 class DummyViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .orange
-
+    lazy var label: UILabel = {
         let label = UILabel(text: "Lorem ipsum dolor")
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .preferredFont(forTextStyle: .title2)
+        return label
+    }()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         view.addSubview(label)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+    }
+}
+
+extension DummyViewController: LaunchSelectionDelegate {
+    func launchSelected(_ launch: SpaceXLaunch) {
+        label.text = "\(launch.flightNumber)"
     }
 }

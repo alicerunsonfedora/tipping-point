@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 /// A networking layer that makes calls to the SpaceX API.
 class SpaceXNetwork {
@@ -30,7 +29,6 @@ class SpaceXNetwork {
 
     /// An enumeration of the different endpoints that can be called.
     enum Endpoint {
-
         /// The launches endpoint.
         case launches
 
@@ -73,11 +71,11 @@ class SpaceXNetwork {
                 completion(.failure(.other(error)))
                 return
             }
-            if let response = resp as? HTTPURLResponse, !(200..<300).contains(response.statusCode) {
+            if let response = resp as? HTTPURLResponse, !(200 ..< 300).contains(response.statusCode) {
                 completion(.failure(.statusNotOk(response.statusCode)))
                 return
             }
-            guard let data = data else {
+            guard let data else {
                 completion(.failure(.badData))
                 return
             }

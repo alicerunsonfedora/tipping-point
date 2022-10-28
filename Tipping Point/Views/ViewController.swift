@@ -10,28 +10,26 @@ import UIToolbox
 
 /// The primary view controller that displays the split view controller.
 class ViewController: UISplitViewController {
+    var viewModel: LaunchesViewModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
+        setUpSplitViewController()
+    }
+
+    private func setUpSplitViewController() {
         delegate = self
-        let primary = UINavigationController(rootViewController: DummyViewController())
-        let detail = UINavigationController(rootViewController: DummyViewController())
+        let primary = LaunchTableViewController(style: .insetGrouped)
+        let detail = DummyViewController()
+        detail.label.text = "No launch selected."
+        detail.label.textColor = .secondaryLabel
+        primary.launchSelectionDelegate = detail
+        let primNavController = UINavigationController(rootViewController: primary)
+        primNavController.navigationBar.prefersLargeTitles = true
 
-        viewControllers = [primary, detail]
-
-        SpaceXNetwork.shared.request(endpoint: .launches) { (result: SpaceXNetwork.DecodedResponse<[SpaceXLaunch]>) in
-            print(result)
-        }
+        viewControllers = [primNavController, detail]
     }
 }
 
-extension ViewController: UISplitViewControllerDelegate {
-    func splitViewController(
-        _ splitViewController: UISplitViewController,
-        collapseSecondary secondaryViewController: UIViewController,
-        onto primaryViewController: UIViewController
-    ) -> Bool {
-        return true
-    }
-}
+extension ViewController: UISplitViewControllerDelegate {}

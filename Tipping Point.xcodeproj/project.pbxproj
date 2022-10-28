@@ -24,6 +24,10 @@
 		95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328807290C1638006CB01F /* SpaceXNetworkError.swift */; };
 		9532880A290C1F37006CB01F /* SpaceXRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328809290C1F37006CB01F /* SpaceXRocket.swift */; };
 		9532880C290C1FC3006CB01F /* SpaceXLaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */; };
+		9532880E290C2F9F006CB01F /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532880D290C2F9F006CB01F /* LaunchesViewModel.swift */; };
+		95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532880F290C4F01006CB01F /* LaunchTableViewController.swift */; };
+		95328812290C50AA006CB01F /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328811290C50AA006CB01F /* LaunchTableViewCell.swift */; };
+		95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		95328807290C1638006CB01F /* SpaceXNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXNetworkError.swift; sourceTree = "<group>"; };
 		95328809290C1F37006CB01F /* SpaceXRocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXRocket.swift; sourceTree = "<group>"; };
 		9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchSite.swift; sourceTree = "<group>"; };
+		9532880D290C2F9F006CB01F /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		9532880F290C4F01006CB01F /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
+		95328811290C50AA006CB01F /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+		95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSelectionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		953287BA290C0378006CB01F /* Tipping Point */ = {
 			isa = PBXGroup;
 			children = (
+				95328813290C57DE006CB01F /* Delegates */,
 				953287FF290C1127006CB01F /* Bootstrapping */,
 				95328804290C151F006CB01F /* Networking */,
 				953287FE290C1122006CB01F /* Models */,
@@ -159,6 +168,8 @@
 			children = (
 				953287BF290C0378006CB01F /* ViewController.swift */,
 				95328800290C1136006CB01F /* DummyViewController.swift */,
+				9532880F290C4F01006CB01F /* LaunchTableViewController.swift */,
+				95328811290C50AA006CB01F /* LaunchTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 		953287FD290C111D006CB01F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				9532880D290C2F9F006CB01F /* LaunchesViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -196,6 +208,14 @@
 				95328807290C1638006CB01F /* SpaceXNetworkError.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		95328813290C57DE006CB01F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,8 +385,12 @@
 				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
 				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,
 				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,
+				95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */,
+				95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */,
 				95328803290C148E006CB01F /* SpaceXLaunch.swift in Sources */,
+				9532880E290C2F9F006CB01F /* LaunchesViewModel.swift in Sources */,
 				9532880C290C1FC3006CB01F /* SpaceXLaunchSite.swift in Sources */,
+				95328812290C50AA006CB01F /* LaunchTableViewCell.swift in Sources */,
 				9532880A290C1F37006CB01F /* SpaceXRocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
