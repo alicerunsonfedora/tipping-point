@@ -7,8 +7,7 @@
 
 import XCTest
 
-final class Tipping_PointUITestsLaunchTests: XCTestCase {
-
+final class TippingPointUITestsLaunchTests: XCTestCase {
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

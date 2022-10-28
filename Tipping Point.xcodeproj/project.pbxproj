@@ -10,12 +10,14 @@
 		953287BC290C0378006CB01F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287BB290C0378006CB01F /* AppDelegate.swift */; };
 		953287BE290C0378006CB01F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287BD290C0378006CB01F /* SceneDelegate.swift */; };
 		953287C0290C0378006CB01F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287BF290C0378006CB01F /* ViewController.swift */; };
-		953287C3290C0378006CB01F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953287C1290C0378006CB01F /* Main.storyboard */; };
 		953287C5290C0379006CB01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953287C4290C0379006CB01F /* Assets.xcassets */; };
 		953287C8290C0379006CB01F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953287C6290C0379006CB01F /* LaunchScreen.storyboard */; };
 		953287D3290C0379006CB01F /* Tipping_PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287D2290C0379006CB01F /* Tipping_PointTests.swift */; };
 		953287DD290C0379006CB01F /* Tipping_PointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287DC290C0379006CB01F /* Tipping_PointUITests.swift */; };
 		953287DF290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287DE290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift */; };
+		953287EF290C0524006CB01F /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 953287ED290C0524006CB01F /* Appfile */; };
+		953287F0290C0524006CB01F /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 953287EE290C0524006CB01F /* Fastfile */; };
+		953287F3290C06E4006CB01F /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 953287F2290C06E4006CB01F /* UIToolbox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		953287BB290C0378006CB01F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953287BD290C0378006CB01F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		953287BF290C0378006CB01F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		953287C2290C0378006CB01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953287C4290C0379006CB01F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953287C7290C0379006CB01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953287C9290C0379006CB01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,8 @@
 		953287D8290C0379006CB01F /* Tipping PointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tipping PointUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953287DC290C0379006CB01F /* Tipping_PointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipping_PointUITests.swift; sourceTree = "<group>"; };
 		953287DE290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipping_PointUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		953287ED290C0524006CB01F /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
+		953287EE290C0524006CB01F /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953287F3290C06E4006CB01F /* UIToolbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 		953287AF290C0378006CB01F = {
 			isa = PBXGroup;
 			children = (
+				953287EC290C0515006CB01F /* Fastlane */,
 				953287BA290C0378006CB01F /* Tipping Point */,
 				953287D1290C0379006CB01F /* Tipping PointTests */,
 				953287DB290C0379006CB01F /* Tipping PointUITests */,
@@ -102,7 +107,6 @@
 				953287BB290C0378006CB01F /* AppDelegate.swift */,
 				953287BD290C0378006CB01F /* SceneDelegate.swift */,
 				953287BF290C0378006CB01F /* ViewController.swift */,
-				953287C1290C0378006CB01F /* Main.storyboard */,
 				953287C4290C0379006CB01F /* Assets.xcassets */,
 				953287C6290C0379006CB01F /* LaunchScreen.storyboard */,
 				953287C9290C0379006CB01F /* Info.plist */,
@@ -127,6 +131,15 @@
 			path = "Tipping PointUITests";
 			sourceTree = "<group>";
 		};
+		953287EC290C0515006CB01F /* Fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				953287ED290C0524006CB01F /* Appfile */,
+				953287EE290C0524006CB01F /* Fastfile */,
+			);
+			name = Fastlane;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 953287E2290C0379006CB01F /* Build configuration list for PBXNativeTarget "Tipping Point" */;
 			buildPhases = (
+				953287F9290C0992006CB01F /* Run SwiftLint */,
 				953287B4290C0378006CB01F /* Sources */,
 				953287B5290C0378006CB01F /* Frameworks */,
 				953287B6290C0378006CB01F /* Resources */,
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = "Tipping Point";
+			packageProductDependencies = (
+				953287F2290C06E4006CB01F /* UIToolbox */,
+			);
 			productName = "Tipping Point";
 			productReference = 953287B8290C0378006CB01F /* Tipping Point.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 953287AF290C0378006CB01F;
+			packageReferences = (
+				953287F1290C06E4006CB01F /* XCRemoteSwiftPackageReference "UIToolbox" */,
+			);
 			productRefGroup = 953287B9290C0378006CB01F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953287F0290C0524006CB01F /* Fastfile in Resources */,
+				953287EF290C0524006CB01F /* Appfile in Resources */,
 				953287C8290C0379006CB01F /* LaunchScreen.storyboard in Resources */,
 				953287C5290C0379006CB01F /* Assets.xcassets in Resources */,
-				953287C3290C0378006CB01F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +273,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		953287F9290C0992006CB01F /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint .\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		953287B4290C0378006CB01F /* Sources */ = {
@@ -297,14 +340,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		953287C1290C0378006CB01F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				953287C2290C0378006CB01F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		953287C6290C0379006CB01F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +477,6 @@
 				INFOPLIST_FILE = "Tipping Point/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +504,6 @@
 				INFOPLIST_FILE = "Tipping Point/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		953287F1290C06E4006CB01F /* XCRemoteSwiftPackageReference "UIToolbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alicerunsonfedora/UIToolbox";
+			requirement = {
+				branch = root;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		953287F2290C06E4006CB01F /* UIToolbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953287F1290C06E4006CB01F /* XCRemoteSwiftPackageReference "UIToolbox" */;
+			productName = UIToolbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 953287B0290C0378006CB01F /* Project object */;
 }
