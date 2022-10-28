@@ -35,12 +35,6 @@ class LaunchesViewModel {
         return launches[index]
     }
 
-    func index(of launch: SpaceXLaunch) -> Int {
-        return launches.firstIndex { sLaunch in
-            sLaunch.flightNumber == launch.flightNumber
-        } ?? -1
-    }
-
     func missionBadge(at index: Int, completion: @escaping (UIImage?) -> Void) {
         guard let launch = launch(at: index), let patch = launch.links.missionPatchSmall else {
             completion(nil)

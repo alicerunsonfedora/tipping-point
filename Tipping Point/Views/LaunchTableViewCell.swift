@@ -10,6 +10,7 @@ import UIKit
 class LaunchTableViewCell: UITableViewCell {
     static let ReuseID = "\(LaunchTableViewCell.self)"
     var launch: SpaceXLaunch?
+    var launchIdx: Int?
 
     lazy var badge: UIImageView = {
         let image = UIImageView(image: .init(systemName: "airplane.departure"))
@@ -64,6 +65,7 @@ class LaunchTableViewCell: UITableViewCell {
 
     func configure(with viewModel: LaunchesViewModel, at index: Int) {
         self.launch = viewModel.launch(at: index)
+        self.launchIdx = index
         if let launch = self.launch {
             name.text = launch.missionName
             rocketSite.text = "\(launch.rocket.name) | \(launch.launchSite.shortName)"
@@ -77,7 +79,7 @@ class LaunchTableViewCell: UITableViewCell {
             }
 
             viewModel.missionBadge(at: index) { [weak self] image in
-                guard viewModel.index(of: launch) == index else { return }
+                guard (self?.launchIdx ?? -1) == index else { return }
                 DispatchQueue.main.async {
                     if let image = image {
                         self?.badge.image = image
