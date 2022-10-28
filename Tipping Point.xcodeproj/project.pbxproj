@@ -18,6 +18,12 @@
 		953287EF290C0524006CB01F /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 953287ED290C0524006CB01F /* Appfile */; };
 		953287F0290C0524006CB01F /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 953287EE290C0524006CB01F /* Fastfile */; };
 		953287F3290C06E4006CB01F /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 953287F2290C06E4006CB01F /* UIToolbox */; };
+		95328801290C1136006CB01F /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328800290C1136006CB01F /* DummyViewController.swift */; };
+		95328803290C148E006CB01F /* SpaceXLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328802290C148E006CB01F /* SpaceXLaunch.swift */; };
+		95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328805290C1531006CB01F /* SpaceXNetwork.swift */; };
+		95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328807290C1638006CB01F /* SpaceXNetworkError.swift */; };
+		9532880A290C1F37006CB01F /* SpaceXRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328809290C1F37006CB01F /* SpaceXRocket.swift */; };
+		9532880C290C1FC3006CB01F /* SpaceXLaunchSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		953287DE290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipping_PointUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		953287ED290C0524006CB01F /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
 		953287EE290C0524006CB01F /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
+		95328800290C1136006CB01F /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		95328802290C148E006CB01F /* SpaceXLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunch.swift; sourceTree = "<group>"; };
+		95328805290C1531006CB01F /* SpaceXNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXNetwork.swift; sourceTree = "<group>"; };
+		95328807290C1638006CB01F /* SpaceXNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXNetworkError.swift; sourceTree = "<group>"; };
+		95328809290C1F37006CB01F /* SpaceXRocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXRocket.swift; sourceTree = "<group>"; };
+		9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLaunchSite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +116,11 @@
 		953287BA290C0378006CB01F /* Tipping Point */ = {
 			isa = PBXGroup;
 			children = (
-				953287BB290C0378006CB01F /* AppDelegate.swift */,
-				953287BD290C0378006CB01F /* SceneDelegate.swift */,
-				953287BF290C0378006CB01F /* ViewController.swift */,
+				953287FF290C1127006CB01F /* Bootstrapping */,
+				95328804290C151F006CB01F /* Networking */,
+				953287FE290C1122006CB01F /* Models */,
+				953287FD290C111D006CB01F /* View Models */,
+				953287FC290C1118006CB01F /* Views */,
 				953287C4290C0379006CB01F /* Assets.xcassets */,
 				953287C6290C0379006CB01F /* LaunchScreen.storyboard */,
 				953287C9290C0379006CB01F /* Info.plist */,
@@ -138,6 +152,50 @@
 				953287EE290C0524006CB01F /* Fastfile */,
 			);
 			name = Fastlane;
+			sourceTree = "<group>";
+		};
+		953287FC290C1118006CB01F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				953287BF290C0378006CB01F /* ViewController.swift */,
+				95328800290C1136006CB01F /* DummyViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		953287FD290C111D006CB01F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		953287FE290C1122006CB01F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95328802290C148E006CB01F /* SpaceXLaunch.swift */,
+				95328809290C1F37006CB01F /* SpaceXRocket.swift */,
+				9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		953287FF290C1127006CB01F /* Bootstrapping */ = {
+			isa = PBXGroup;
+			children = (
+				953287BB290C0378006CB01F /* AppDelegate.swift */,
+				953287BD290C0378006CB01F /* SceneDelegate.swift */,
+			);
+			path = Bootstrapping;
+			sourceTree = "<group>";
+		};
+		95328804290C151F006CB01F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				95328805290C1531006CB01F /* SpaceXNetwork.swift */,
+				95328807290C1638006CB01F /* SpaceXNetworkError.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +362,12 @@
 				953287C0290C0378006CB01F /* ViewController.swift in Sources */,
 				953287BC290C0378006CB01F /* AppDelegate.swift in Sources */,
 				953287BE290C0378006CB01F /* SceneDelegate.swift in Sources */,
+				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
+				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,
+				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,
+				95328803290C148E006CB01F /* SpaceXLaunch.swift in Sources */,
+				9532880C290C1FC3006CB01F /* SpaceXLaunchSite.swift in Sources */,
+				9532880A290C1F37006CB01F /* SpaceXRocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
