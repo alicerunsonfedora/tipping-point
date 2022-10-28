@@ -29,6 +29,7 @@
 		95328812290C50AA006CB01F /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328811290C50AA006CB01F /* LaunchTableViewCell.swift */; };
 		95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */; };
 		95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */; };
+		95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328818290C718B006CB01F /* LaunchDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		95328811290C50AA006CB01F /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSelectionDelegate.swift; sourceTree = "<group>"; };
 		95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXImageLinks.swift; sourceTree = "<group>"; };
+		95328818290C718B006CB01F /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				95328800290C1136006CB01F /* DummyViewController.swift */,
 				9532880F290C4F01006CB01F /* LaunchTableViewController.swift */,
 				95328811290C50AA006CB01F /* LaunchTableViewCell.swift */,
+				95328818290C718B006CB01F /* LaunchDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
 				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,
 				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,
+				95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */,
 				95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */,
 				95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */,
 				95328803290C148E006CB01F /* SpaceXLaunch.swift in Sources */,
@@ -567,6 +571,7 @@
 				DEVELOPMENT_TEAM = N4K7Y69MC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tipping Point/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SpaceX Launches";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -594,6 +599,7 @@
 				DEVELOPMENT_TEAM = N4K7Y69MC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tipping Point/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SpaceX Launches";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

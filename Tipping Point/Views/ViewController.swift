@@ -21,7 +21,7 @@ class ViewController: UISplitViewController {
     private func setUpSplitViewController() {
         delegate = self
         let primary = LaunchTableViewController(style: .insetGrouped)
-        let detail = DummyViewController()
+        let detail = LaunchDetailViewController()
         detail.label.text = "No launch selected."
         detail.label.textColor = .secondaryLabel
         primary.launchSelectionDelegate = detail

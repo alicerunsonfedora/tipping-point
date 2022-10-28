@@ -56,7 +56,7 @@ class SpaceXNetwork {
     private func makeRequest(to endpoint: String, completion: @escaping (Response) -> Void) {
         var requestPath = baseURL + endpoint
         if endpoint.starts(with: "https://") {
-            print("WARN: Endpoint is a different URL.")
+            print("WARN: Endpoint is a different URL: \(endpoint)")
             requestPath = endpoint
         }
 

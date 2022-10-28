@@ -21,7 +21,6 @@ class LaunchTableViewController: UITableViewController {
         let viewModel = LaunchesViewModel(with: .shared)
         self.viewModel = viewModel
         viewModel.bind { [weak self] in
-            print("FIRE!")
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -50,7 +49,7 @@ class LaunchTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let launch = viewModel?.launch(at: indexPath.row) else { return }
         launchSelectionDelegate?.launchSelected(launch)
-        if let detailVC = launchSelectionDelegate as? DummyViewController {
+        if let detailVC = launchSelectionDelegate as? LaunchDetailViewController {
             splitViewController?.showDetailViewController(detailVC, sender: nil)
         }
     }
