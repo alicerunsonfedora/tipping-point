@@ -28,6 +28,7 @@
 		95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532880F290C4F01006CB01F /* LaunchTableViewController.swift */; };
 		95328812290C50AA006CB01F /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328811290C50AA006CB01F /* LaunchTableViewCell.swift */; };
 		95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */; };
+		95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		9532880F290C4F01006CB01F /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
 		95328811290C50AA006CB01F /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSelectionDelegate.swift; sourceTree = "<group>"; };
+		95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXImageLinks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				95328802290C148E006CB01F /* SpaceXLaunch.swift */,
 				95328809290C1F37006CB01F /* SpaceXRocket.swift */,
 				9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */,
+				95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				953287C0290C0378006CB01F /* ViewController.swift in Sources */,
 				953287BC290C0378006CB01F /* AppDelegate.swift in Sources */,
 				953287BE290C0378006CB01F /* SceneDelegate.swift in Sources */,
+				95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */,
 				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
 				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,
 				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,

@@ -9,9 +9,34 @@ import UIKit
 
 class LaunchTableViewCell: UITableViewCell {
     static let ReuseID = "\(LaunchTableViewCell.self)"
+    var launch: SpaceXLaunch?
+
+    lazy var badge: UIImageView = {
+        let image = UIImageView(image: .init(systemName: "airplane.departure"))
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+
     lazy var name: UILabel = {
-        let label = UILabel(text: "Hi there!")
+        let label = UILabel(text: "A Great Mission")
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .preferredFont(forTextStyle: .headline)
+        return label
+    }()
+
+    lazy var rocketSite: UILabel = {
+        let label = UILabel(text: "Rocket 0 | Space")
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .preferredFont(forTextStyle: .subheadline)
+        label.textColor = .secondaryLabel
+        return label
+    }()
+
+    lazy var date: UILabel = {
+        let label = UILabel(text: "Unknown date")
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .preferredFont(forTextStyle: .caption1)
+        label.textColor = .tertiaryLabel
         return label
     }()
 
@@ -25,11 +50,41 @@ class LaunchTableViewCell: UITableViewCell {
     }
 
     private func setInitialState() {
-        let stack = UIStackView(axis: .vertical, alignment: .leading)
+        let stack = UIStackView(axis: .horizontal, alignment: .center, spacing: 10)
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.addArrangedSubviews([name])
-//        name.bindToSuperView(insets: .zero, useSafeArea: false)
+        badge.constrainToSize(width: 64, height: 64)
+
+        let textStack = UIStackView(axis: .vertical, alignment: .leading)
+        textStack.translatesAutoresizingMaskIntoConstraints = false
+        textStack.addArrangedSubviews([name, rocketSite, date])
+        stack.addArrangedSubviews([badge, textStack])
         addSubview(stack)
         stack.bindToSuperView(horizontalInsets: 10, verticalInsets: 8)
+    }
+
+    func configure(with viewModel: LaunchesViewModel, at index: Int) {
+        self.launch = viewModel.launch(at: index)
+        if let launch = self.launch {
+            name.text = launch.missionName
+            rocketSite.text = "\(launch.rocket.name) | \(launch.launchSite.shortName)"
+
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
+            if let realDate = formatter.date(from: launch.launchDate) {
+                let realFormat = DateFormatter()
+                realFormat.dateStyle = .short
+                date.text = realFormat.string(from: realDate)
+            }
+
+            viewModel.missionBadge(at: index) { [weak self] image in
+                guard viewModel.index(of: launch) == index else { return }
+                DispatchQueue.main.async {
+                    if let image = image {
+                        self?.badge.image = image
+                    }
+                }
+            }
+        }
+
     }
 }

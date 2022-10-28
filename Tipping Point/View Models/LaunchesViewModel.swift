@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViewModel {
     func bind(handler: @escaping () -> Void)
@@ -33,6 +34,41 @@ class LaunchesViewModel {
         guard index < launches.count else { return nil }
         return launches[index]
     }
+
+    func index(of launch: SpaceXLaunch) -> Int {
+        return launches.firstIndex { sLaunch in
+            sLaunch.flightNumber == launch.flightNumber
+        } ?? -1
+    }
+
+    func missionBadge(at index: Int, completion: @escaping (UIImage?) -> Void) {
+        guard let launch = launch(at: index), let patch = launch.links.missionPatchSmall else {
+            completion(nil)
+            return
+        }
+        network.request(endpoint: .unsafe(patch)) { result in
+            switch result {
+            case .success(let data):
+                completion(UIImage(data: data))
+            case .failure(let error):
+                print("Err: \(error)")
+                completion(nil)
+            }
+        }
+    }
+
+    private func reorderLaunches() {
+        launches.sort { first, second in
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
+            if let firstDate = formatter.date(from: first.launchDate),
+               let secondDate = formatter.date(from: second.launchDate) {
+                return firstDate.compare(secondDate) == .orderedDescending
+            } else {
+                return false
+            }
+        }
+    }
 }
 
 extension LaunchesViewModel: ViewModel {
@@ -46,6 +82,7 @@ extension LaunchesViewModel: ViewModel {
                 switch result {
                 case .success(let launches):
                     self?.launches.append(contentsOf: launches)
+                    self?.reorderLaunches()
                 case .failure(let error):
                     print("Err: \(error)")
                 }

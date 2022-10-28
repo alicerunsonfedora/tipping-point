@@ -19,6 +19,7 @@ struct SpaceXLaunch: Decodable {
     let rocket: SpaceXRocket
     let ships: [String]
     let launchSite: SpaceXLaunchSite
+    let links: SpaceXLinkDirectory
 
     enum CodingKeys: String, CodingKey {
         case flightNumber
@@ -32,5 +33,6 @@ struct SpaceXLaunch: Decodable {
         case rocket
         case ships
         case launchSite
+        case links
     }
 }

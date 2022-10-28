@@ -35,12 +35,15 @@ class LaunchTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView
-            .dequeueReusableCell(withIdentifier: LaunchTableViewCell.ReuseID, for: indexPath) as? LaunchTableViewCell
+        guard let viewModel = self.viewModel,
+              let cell = tableView.dequeueReusableCell(
+                withIdentifier: LaunchTableViewCell.ReuseID,
+                for: indexPath
+              ) as? LaunchTableViewCell
         else {
             return LaunchTableViewCell()
         }
-        cell.name.text = "Whoosh"
+        cell.configure(with: viewModel, at: indexPath.row)
         return cell
     }
 
