@@ -28,7 +28,7 @@
 		95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532880F290C4F01006CB01F /* LaunchTableViewController.swift */; };
 		95328812290C50AA006CB01F /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328811290C50AA006CB01F /* LaunchTableViewCell.swift */; };
 		95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */; };
-		95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */; };
+		95328817290C6AC8006CB01F /* SpaceXLinkDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328816290C6AC8006CB01F /* SpaceXLinkDirectory.swift */; };
 		95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328818290C718B006CB01F /* LaunchDetailViewController.swift */; };
 		9532881C290ED9C0006CB01F /* UITableViewCell+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */; };
 /* End PBXBuildFile section */
@@ -75,7 +75,7 @@
 		9532880F290C4F01006CB01F /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
 		95328811290C50AA006CB01F /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSelectionDelegate.swift; sourceTree = "<group>"; };
-		95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXImageLinks.swift; sourceTree = "<group>"; };
+		95328816290C6AC8006CB01F /* SpaceXLinkDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLinkDirectory.swift; sourceTree = "<group>"; };
 		95328818290C718B006CB01F /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
 		9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Registration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,7 +196,7 @@
 				95328802290C148E006CB01F /* SpaceXLaunch.swift */,
 				95328809290C1F37006CB01F /* SpaceXRocket.swift */,
 				9532880B290C1FC3006CB01F /* SpaceXLaunchSite.swift */,
-				95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */,
+				95328816290C6AC8006CB01F /* SpaceXLinkDirectory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 				953287C0290C0378006CB01F /* ViewController.swift in Sources */,
 				953287BC290C0378006CB01F /* AppDelegate.swift in Sources */,
 				953287BE290C0378006CB01F /* SceneDelegate.swift in Sources */,
-				95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */,
+				95328817290C6AC8006CB01F /* SpaceXLinkDirectory.swift in Sources */,
 				9532881C290ED9C0006CB01F /* UITableViewCell+Registration.swift in Sources */,
 				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
 				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,

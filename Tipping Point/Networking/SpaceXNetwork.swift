@@ -49,6 +49,8 @@ class SpaceXNetwork {
         }
     }
 
+    /// Instantiates a network service.
+    /// - Parameter session: The `URLSession` that will be used to make calls internally.
     init(session: URLSession) {
         self.session = session
     }
@@ -85,10 +87,14 @@ class SpaceXNetwork {
 
     /// Makes a GET request to an endpoint.
     /// - Parameter endpoint: The endpoint to fetch data from.
+    /// - Parameter completion: A completion handler that executes when the request returns.
     func request(endpoint: Endpoint, completion: @escaping (Response) -> Void) {
         makeRequest(to: endpoint.path, completion: completion)
     }
 
+    /// Makes a GET request to an endpoint.
+    /// - Parameter endpoint: The endpoint to fetch data from.
+    /// - Parameter completion: A completion handler that executes when the request returns.
     func request<T: Decodable>(endpoint: Endpoint, completion: @escaping (DecodedResponse<T>) -> Void) {
         makeRequest(to: endpoint.path) { response in
             switch response {
