@@ -42,6 +42,9 @@ struct SpaceXLaunch: Decodable {
     /// A directory of links.
     let links: SpaceXLinkDirectory
 
+    /// The launch's mission details.
+    let description: String?
+
     /// An enumeration of the various coding keys for decoding.
     enum CodingKeys: String, CodingKey {
         case flightNumber
@@ -55,5 +58,6 @@ struct SpaceXLaunch: Decodable {
         case ships
         case launchSite
         case links
+        case description = "details"
     }
 }

@@ -30,19 +30,20 @@ class LaunchTableViewController: UITableViewController {
     }
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        return viewModel?.numberOfLaunches() ?? 0
+        viewModel?.numberOfLaunches() ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let viewModel = self.viewModel,
-              let cell = tableView.dequeueReusableCell(LaunchTableViewCell.self, for: indexPath) else {
+        guard let viewModel,
+              let cell = tableView.dequeueReusableCell(LaunchTableViewCell.self, for: indexPath)
+        else {
             return LaunchTableViewCell()
         }
         cell.configure(with: viewModel, at: indexPath.row)
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let launch = viewModel?.launch(at: indexPath.row) else { return }
         launchSelectionDelegate?.launchSelected(launch)
         if let detailVC = launchSelectionDelegate as? LaunchDetailViewController {

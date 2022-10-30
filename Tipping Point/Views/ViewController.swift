@@ -21,13 +21,28 @@ class ViewController: UISplitViewController {
     private func setUpSplitViewController() {
         delegate = self
         let primary = LaunchTableViewController(style: .insetGrouped)
-        let detail = LaunchDetailViewController()
+        let detail = LaunchDetailViewController(style: .insetGrouped)
         primary.launchSelectionDelegate = detail
         let primNavController = UINavigationController(rootViewController: primary)
         primNavController.navigationBar.prefersLargeTitles = true
-
-        viewControllers = [primNavController, detail]
+        detail.navigationController?.navigationBar.prefersLargeTitles = true
+        viewControllers = [primNavController, UINavigationController(rootViewController: detail)]
     }
 }
 
-extension ViewController: UISplitViewControllerDelegate {}
+extension ViewController: UISplitViewControllerDelegate {
+    func splitViewController(
+        _: UISplitViewController,
+        topColumnForCollapsingToProposedTopColumn _: UISplitViewController.Column
+    ) -> UISplitViewController.Column {
+        .primary
+    }
+
+    public func splitViewController(
+        _: UISplitViewController,
+        collapseSecondary _: UIViewController,
+        onto _: UIViewController
+    ) -> Bool {
+        true
+    }
+}

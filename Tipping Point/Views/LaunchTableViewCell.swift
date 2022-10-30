@@ -45,7 +45,8 @@ class LaunchTableViewCell: UITableViewCell {
         setInitialState()
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -63,29 +64,23 @@ class LaunchTableViewCell: UITableViewCell {
     }
 
     func configure(with viewModel: LaunchesViewModel, at index: Int) {
-        self.launch = viewModel.launch(at: index)
-        self.launchIdx = index
-        if let launch = self.launch {
+        launch = viewModel.launch(at: index)
+        launchIdx = index
+        if let launch {
             name.text = launch.missionName
             rocketSite.text = "\(launch.rocket.name) | \(launch.launchSite.shortName)"
-
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
-            if let realDate = formatter.date(from: launch.launchDate) {
-                let realFormat = DateFormatter()
-                realFormat.dateStyle = .short
-                date.text = realFormat.string(from: realDate)
+            if let realDate = launch.launchDate.formatDateFromISO8601() {
+                date.text = realDate
             }
 
             viewModel.missionBadge(at: index) { [weak self] image in
                 guard (self?.launchIdx ?? -1) == index else { return }
                 DispatchQueue.main.async {
-                    if let image = image {
+                    if let image {
                         self?.badge.image = image
                     }
                 }
             }
         }
-
     }
 }

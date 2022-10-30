@@ -56,7 +56,8 @@ class LaunchesViewModel {
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
             if let firstDate = formatter.date(from: first.launchDate),
-               let secondDate = formatter.date(from: second.launchDate) {
+               let secondDate = formatter.date(from: second.launchDate)
+            {
                 return firstDate.compare(secondDate) == .orderedDescending
             } else {
                 return false

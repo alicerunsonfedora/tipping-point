@@ -31,6 +31,9 @@
 		95328817290C6AC8006CB01F /* SpaceXLinkDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328816290C6AC8006CB01F /* SpaceXLinkDirectory.swift */; };
 		95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328818290C718B006CB01F /* LaunchDetailViewController.swift */; };
 		9532881C290ED9C0006CB01F /* UITableViewCell+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */; };
+		9532881E290EE470006CB01F /* BasicTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881D290EE470006CB01F /* BasicTextTableViewCell.swift */; };
+		95328820290EE88F006CB01F /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881F290EE88F006CB01F /* LaunchDetailViewModel.swift */; };
+		95328822290EF1BD006CB01F /* String+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328821290EF1BD006CB01F /* String+DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		95328816290C6AC8006CB01F /* SpaceXLinkDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXLinkDirectory.swift; sourceTree = "<group>"; };
 		95328818290C718B006CB01F /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
 		9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Registration.swift"; sourceTree = "<group>"; };
+		9532881D290EE470006CB01F /* BasicTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextTableViewCell.swift; sourceTree = "<group>"; };
+		9532881F290EE88F006CB01F /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
+		95328821290EF1BD006CB01F /* String+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateFormatter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 				9532880F290C4F01006CB01F /* LaunchTableViewController.swift */,
 				95328811290C50AA006CB01F /* LaunchTableViewCell.swift */,
 				95328818290C718B006CB01F /* LaunchDetailViewController.swift */,
+				9532881D290EE470006CB01F /* BasicTextTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9532880D290C2F9F006CB01F /* LaunchesViewModel.swift */,
+				9532881F290EE88F006CB01F /* LaunchDetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */,
+				95328821290EF1BD006CB01F /* String+DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -400,15 +409,18 @@
 				953287BC290C0378006CB01F /* AppDelegate.swift in Sources */,
 				953287BE290C0378006CB01F /* SceneDelegate.swift in Sources */,
 				95328817290C6AC8006CB01F /* SpaceXLinkDirectory.swift in Sources */,
+				95328820290EE88F006CB01F /* LaunchDetailViewModel.swift in Sources */,
 				9532881C290ED9C0006CB01F /* UITableViewCell+Registration.swift in Sources */,
 				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
 				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,
+				9532881E290EE470006CB01F /* BasicTextTableViewCell.swift in Sources */,
 				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,
 				95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */,
 				95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */,
 				95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */,
 				95328803290C148E006CB01F /* SpaceXLaunch.swift in Sources */,
 				9532880E290C2F9F006CB01F /* LaunchesViewModel.swift in Sources */,
+				95328822290EF1BD006CB01F /* String+DateFormatter.swift in Sources */,
 				9532880C290C1FC3006CB01F /* SpaceXLaunchSite.swift in Sources */,
 				95328812290C50AA006CB01F /* LaunchTableViewCell.swift in Sources */,
 				9532880A290C1F37006CB01F /* SpaceXRocket.swift in Sources */,

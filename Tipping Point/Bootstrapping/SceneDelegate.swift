@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         window?.overrideUserInterfaceStyle = .dark
         let mainVC = ViewController()
+        mainVC.preferredDisplayMode = .oneBesideSecondary
         window?.rootViewController = mainVC
         window?.makeKeyAndVisible()
     }
