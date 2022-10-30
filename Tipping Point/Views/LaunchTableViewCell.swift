@@ -8,7 +8,6 @@
 import UIKit
 
 class LaunchTableViewCell: UITableViewCell {
-    static let ReuseID = "\(LaunchTableViewCell.self)"
     var launch: SpaceXLaunch?
     var launchIdx: Int?
 

@@ -22,8 +22,6 @@ class ViewController: UISplitViewController {
         delegate = self
         let primary = LaunchTableViewController(style: .insetGrouped)
         let detail = LaunchDetailViewController()
-        detail.label.text = "No launch selected."
-        detail.label.textColor = .secondaryLabel
         primary.launchSelectionDelegate = detail
         let primNavController = UINavigationController(rootViewController: primary)
         primNavController.navigationBar.prefersLargeTitles = true

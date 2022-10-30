@@ -30,6 +30,7 @@
 		95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */; };
 		95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */; };
 		95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328818290C718B006CB01F /* LaunchDetailViewController.swift */; };
+		9532881C290ED9C0006CB01F /* UITableViewCell+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSelectionDelegate.swift; sourceTree = "<group>"; };
 		95328816290C6AC8006CB01F /* SpaceXImageLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXImageLinks.swift; sourceTree = "<group>"; };
 		95328818290C718B006CB01F /* LaunchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewController.swift; sourceTree = "<group>"; };
+		9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Registration.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		953287BA290C0378006CB01F /* Tipping Point */ = {
 			isa = PBXGroup;
 			children = (
+				9532881A290ED9AB006CB01F /* Extensions */,
 				95328813290C57DE006CB01F /* Delegates */,
 				953287FF290C1127006CB01F /* Bootstrapping */,
 				95328804290C151F006CB01F /* Networking */,
@@ -222,6 +225,14 @@
 				95328814290C57F9006CB01F /* LaunchSelectionDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		9532881A290ED9AB006CB01F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9532881B290ED9C0006CB01F /* UITableViewCell+Registration.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				953287BC290C0378006CB01F /* AppDelegate.swift in Sources */,
 				953287BE290C0378006CB01F /* SceneDelegate.swift in Sources */,
 				95328817290C6AC8006CB01F /* SpaceXImageLinks.swift in Sources */,
+				9532881C290ED9C0006CB01F /* UITableViewCell+Registration.swift in Sources */,
 				95328801290C1136006CB01F /* DummyViewController.swift in Sources */,
 				95328808290C1638006CB01F /* SpaceXNetworkError.swift in Sources */,
 				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,

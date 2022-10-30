@@ -16,7 +16,7 @@ class LaunchTableViewController: UITableViewController {
         view.backgroundColor = .systemBackground
         title = "Launches"
         tableView.dataSource = self
-        tableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: LaunchTableViewCell.ReuseID)
+        tableView.register(LaunchTableViewCell.self)
 
         let viewModel = LaunchesViewModel(with: .shared)
         self.viewModel = viewModel
@@ -35,11 +35,7 @@ class LaunchTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let viewModel = self.viewModel,
-              let cell = tableView.dequeueReusableCell(
-                withIdentifier: LaunchTableViewCell.ReuseID,
-                for: indexPath
-              ) as? LaunchTableViewCell
-        else {
+              let cell = tableView.dequeueReusableCell(LaunchTableViewCell.self, for: indexPath) else {
             return LaunchTableViewCell()
         }
         cell.configure(with: viewModel, at: indexPath.row)
