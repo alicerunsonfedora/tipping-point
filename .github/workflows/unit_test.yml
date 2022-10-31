@@ -22,5 +22,8 @@ jobs:
         xcode-version: '13.2.1'
     - name: Install dependencies
       run: bundle install
+    # This is needed since Xcode 13.2.1 does NOT support the v2 manifest.
+    - name: Remove manifest
+      run: rm Tipping\ Point.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
     - name: Run tests in Fastlane
       run: bundle exec fastlane unit_tests
