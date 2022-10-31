@@ -24,3 +24,15 @@ enum SpaceXNetworkError: Error {
     /// A catch-all error case.
     case other(Error)
 }
+
+extension SpaceXNetworkError: LocalizedError {
+    var localizedDescription: String {
+        switch self {
+        case .badRequest: return "The request was malformed or bad."
+        case .statusNotOk(let code): return "Request received non-OK status code: \(code)"
+        case .badData: return "The request received bad data."
+        case .decodeFailure(let err): return "Decoding failed: \(err.localizedDescription)"
+        case .other(let err): return "An unknown error occurred: \(err.localizedDescription)"
+        }
+    }
+}

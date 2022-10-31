@@ -22,7 +22,7 @@ class SpaceXNetwork {
     typealias DecodedResponse<T: Decodable> = Result<T, NetworkError>
 
     /// The internal session that will make requests to the API.
-    private var session: URLSession
+    private var session: SpaceXNetworkServiceDelegate
 
     /// The API's base URL.
     private var baseURL: String = "https://api.spacexdata.com/v3"
@@ -51,13 +51,13 @@ class SpaceXNetwork {
 
     /// Instantiates a network service.
     /// - Parameter session: The `URLSession` that will be used to make calls internally.
-    init(session: URLSession) {
+    init(session: SpaceXNetworkServiceDelegate) {
         self.session = session
     }
 
     private func makeRequest(to endpoint: String, completion: @escaping (Response) -> Void) {
         var requestPath = baseURL + endpoint
-        if endpoint.starts(with: "https://") {
+        if !endpoint.starts(with: "/") {
             print("WARN: Endpoint is a different URL: \(endpoint)")
             requestPath = endpoint
         }
@@ -68,7 +68,7 @@ class SpaceXNetwork {
         }
 
         let request = URLRequest(url: url)
-        session.dataTask(with: request) { data, resp, err in
+        session.get(with: request) { data, resp, err in
             if let error = err {
                 completion(.failure(.other(error)))
                 return
@@ -82,7 +82,7 @@ class SpaceXNetwork {
                 return
             }
             completion(.success(data))
-        }.resume()
+        }
     }
 
     /// Makes a GET request to an endpoint.

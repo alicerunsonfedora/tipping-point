@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,6 @@
 		953287C0290C0378006CB01F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287BF290C0378006CB01F /* ViewController.swift */; };
 		953287C5290C0379006CB01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953287C4290C0379006CB01F /* Assets.xcassets */; };
 		953287C8290C0379006CB01F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953287C6290C0379006CB01F /* LaunchScreen.storyboard */; };
-		953287D3290C0379006CB01F /* Tipping_PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287D2290C0379006CB01F /* Tipping_PointTests.swift */; };
-		953287DD290C0379006CB01F /* Tipping_PointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287DC290C0379006CB01F /* Tipping_PointUITests.swift */; };
-		953287DF290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953287DE290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift */; };
 		953287EF290C0524006CB01F /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 953287ED290C0524006CB01F /* Appfile */; };
 		953287F0290C0524006CB01F /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 953287EE290C0524006CB01F /* Fastfile */; };
 		953287F3290C06E4006CB01F /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = 953287F2290C06E4006CB01F /* UIToolbox */; };
@@ -34,17 +31,14 @@
 		9532881E290EE470006CB01F /* BasicTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881D290EE470006CB01F /* BasicTextTableViewCell.swift */; };
 		95328820290EE88F006CB01F /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9532881F290EE88F006CB01F /* LaunchDetailViewModel.swift */; };
 		95328822290EF1BD006CB01F /* String+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95328821290EF1BD006CB01F /* String+DateFormatter.swift */; };
+		95AC170A290FF9DA00E5FEAA /* Testbench.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC1709290FF9DA00E5FEAA /* Testbench.swift */; };
+		95AC1712290FFA0C00E5FEAA /* Launches.json in Resources */ = {isa = PBXBuildFile; fileRef = 95AC1711290FFA0C00E5FEAA /* Launches.json */; };
+		95AC1714290FFB6400E5FEAA /* SpaceXNetworkServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC1713290FFB6400E5FEAA /* SpaceXNetworkServiceDelegate.swift */; };
+		95AC1716290FFCBE00E5FEAA /* MuskratService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC1715290FFCBE00E5FEAA /* MuskratService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		953287CF290C0379006CB01F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 953287B0290C0378006CB01F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 953287B7290C0378006CB01F;
-			remoteInfo = "Tipping Point";
-		};
-		953287D9290C0379006CB01F /* PBXContainerItemProxy */ = {
+		95AC170B290FF9DA00E5FEAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 953287B0290C0378006CB01F /* Project object */;
 			proxyType = 1;
@@ -61,11 +55,6 @@
 		953287C4290C0379006CB01F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953287C7290C0379006CB01F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953287C9290C0379006CB01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		953287CE290C0379006CB01F /* Tipping PointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tipping PointTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		953287D2290C0379006CB01F /* Tipping_PointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipping_PointTests.swift; sourceTree = "<group>"; };
-		953287D8290C0379006CB01F /* Tipping PointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tipping PointUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		953287DC290C0379006CB01F /* Tipping_PointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipping_PointUITests.swift; sourceTree = "<group>"; };
-		953287DE290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipping_PointUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		953287ED290C0524006CB01F /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Appfile; path = fastlane/Appfile; sourceTree = "<group>"; };
 		953287EE290C0524006CB01F /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
 		95328800290C1136006CB01F /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +73,11 @@
 		9532881D290EE470006CB01F /* BasicTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextTableViewCell.swift; sourceTree = "<group>"; };
 		9532881F290EE88F006CB01F /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
 		95328821290EF1BD006CB01F /* String+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateFormatter.swift"; sourceTree = "<group>"; };
+		95AC1707290FF9D900E5FEAA /* Testbench.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Testbench.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AC1709290FF9DA00E5FEAA /* Testbench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testbench.swift; sourceTree = "<group>"; };
+		95AC1711290FFA0C00E5FEAA /* Launches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Launches.json; sourceTree = "<group>"; };
+		95AC1713290FFB6400E5FEAA /* SpaceXNetworkServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXNetworkServiceDelegate.swift; sourceTree = "<group>"; };
+		95AC1715290FFCBE00E5FEAA /* MuskratService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuskratService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +89,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		953287CB290C0379006CB01F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		953287D5290C0379006CB01F /* Frameworks */ = {
+		95AC1704290FF9D900E5FEAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,8 +104,7 @@
 			children = (
 				953287EC290C0515006CB01F /* Fastlane */,
 				953287BA290C0378006CB01F /* Tipping Point */,
-				953287D1290C0379006CB01F /* Tipping PointTests */,
-				953287DB290C0379006CB01F /* Tipping PointUITests */,
+				95AC1708290FF9DA00E5FEAA /* Testbench */,
 				953287B9290C0378006CB01F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,8 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				953287B8290C0378006CB01F /* Tipping Point.app */,
-				953287CE290C0379006CB01F /* Tipping PointTests.xctest */,
-				953287D8290C0379006CB01F /* Tipping PointUITests.xctest */,
+				95AC1707290FF9D900E5FEAA /* Testbench.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,23 +133,6 @@
 				953287C9290C0379006CB01F /* Info.plist */,
 			);
 			path = "Tipping Point";
-			sourceTree = "<group>";
-		};
-		953287D1290C0379006CB01F /* Tipping PointTests */ = {
-			isa = PBXGroup;
-			children = (
-				953287D2290C0379006CB01F /* Tipping_PointTests.swift */,
-			);
-			path = "Tipping PointTests";
-			sourceTree = "<group>";
-		};
-		953287DB290C0379006CB01F /* Tipping PointUITests */ = {
-			isa = PBXGroup;
-			children = (
-				953287DC290C0379006CB01F /* Tipping_PointUITests.swift */,
-				953287DE290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift */,
-			);
-			path = "Tipping PointUITests";
 			sourceTree = "<group>";
 		};
 		953287EC290C0515006CB01F /* Fastlane */ = {
@@ -223,6 +191,7 @@
 			children = (
 				95328805290C1531006CB01F /* SpaceXNetwork.swift */,
 				95328807290C1638006CB01F /* SpaceXNetworkError.swift */,
+				95AC1713290FFB6400E5FEAA /* SpaceXNetworkServiceDelegate.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -242,6 +211,24 @@
 				95328821290EF1BD006CB01F /* String+DateFormatter.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95AC1708290FF9DA00E5FEAA /* Testbench */ = {
+			isa = PBXGroup;
+			children = (
+				95AC1710290FF9EC00E5FEAA /* Mock Data */,
+				95AC1709290FF9DA00E5FEAA /* Testbench.swift */,
+				95AC1715290FFCBE00E5FEAA /* MuskratService.swift */,
+			);
+			path = Testbench;
+			sourceTree = "<group>";
+		};
+		95AC1710290FF9EC00E5FEAA /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				95AC1711290FFA0C00E5FEAA /* Launches.json */,
+			);
+			path = "Mock Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,41 +255,23 @@
 			productReference = 953287B8290C0378006CB01F /* Tipping Point.app */;
 			productType = "com.apple.product-type.application";
 		};
-		953287CD290C0379006CB01F /* Tipping PointTests */ = {
+		95AC1706290FF9D900E5FEAA /* Testbench */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 953287E5290C0379006CB01F /* Build configuration list for PBXNativeTarget "Tipping PointTests" */;
+			buildConfigurationList = 95AC170F290FF9DA00E5FEAA /* Build configuration list for PBXNativeTarget "Testbench" */;
 			buildPhases = (
-				953287CA290C0379006CB01F /* Sources */,
-				953287CB290C0379006CB01F /* Frameworks */,
-				953287CC290C0379006CB01F /* Resources */,
+				95AC1703290FF9D900E5FEAA /* Sources */,
+				95AC1704290FF9D900E5FEAA /* Frameworks */,
+				95AC1705290FF9D900E5FEAA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				953287D0290C0379006CB01F /* PBXTargetDependency */,
+				95AC170C290FF9DA00E5FEAA /* PBXTargetDependency */,
 			);
-			name = "Tipping PointTests";
-			productName = "Tipping PointTests";
-			productReference = 953287CE290C0379006CB01F /* Tipping PointTests.xctest */;
+			name = Testbench;
+			productName = Testbench;
+			productReference = 95AC1707290FF9D900E5FEAA /* Testbench.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		953287D7290C0379006CB01F /* Tipping PointUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 953287E8290C0379006CB01F /* Build configuration list for PBXNativeTarget "Tipping PointUITests" */;
-			buildPhases = (
-				953287D4290C0379006CB01F /* Sources */,
-				953287D5290C0379006CB01F /* Frameworks */,
-				953287D6290C0379006CB01F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				953287DA290C0379006CB01F /* PBXTargetDependency */,
-			);
-			name = "Tipping PointUITests";
-			productName = "Tipping PointUITests";
-			productReference = 953287D8290C0379006CB01F /* Tipping PointUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -317,18 +286,14 @@
 					953287B7290C0378006CB01F = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					953287CD290C0379006CB01F = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 953287B7290C0378006CB01F;
-					};
-					953287D7290C0379006CB01F = {
+					95AC1706290FF9D900E5FEAA = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 953287B7290C0378006CB01F;
 					};
 				};
 			};
 			buildConfigurationList = 953287B3290C0378006CB01F /* Build configuration list for PBXProject "Tipping Point" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -344,8 +309,7 @@
 			projectRoot = "";
 			targets = (
 				953287B7290C0378006CB01F /* Tipping Point */,
-				953287CD290C0379006CB01F /* Tipping PointTests */,
-				953287D7290C0379006CB01F /* Tipping PointUITests */,
+				95AC1706290FF9D900E5FEAA /* Testbench */,
 			);
 		};
 /* End PBXProject section */
@@ -362,17 +326,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		953287CC290C0379006CB01F /* Resources */ = {
+		95AC1705290FF9D900E5FEAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		953287D6290C0379006CB01F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				95AC1712290FFA0C00E5FEAA /* Launches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +374,7 @@
 				9532881E290EE470006CB01F /* BasicTextTableViewCell.swift in Sources */,
 				95328806290C1531006CB01F /* SpaceXNetwork.swift in Sources */,
 				95328819290C718B006CB01F /* LaunchDetailViewController.swift in Sources */,
+				95AC1714290FFB6400E5FEAA /* SpaceXNetworkServiceDelegate.swift in Sources */,
 				95328815290C57F9006CB01F /* LaunchSelectionDelegate.swift in Sources */,
 				95328810290C4F01006CB01F /* LaunchTableViewController.swift in Sources */,
 				95328803290C148E006CB01F /* SpaceXLaunch.swift in Sources */,
@@ -427,35 +386,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		953287CA290C0379006CB01F /* Sources */ = {
+		95AC1703290FF9D900E5FEAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				953287D3290C0379006CB01F /* Tipping_PointTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		953287D4290C0379006CB01F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				953287DD290C0379006CB01F /* Tipping_PointUITests.swift in Sources */,
-				953287DF290C0379006CB01F /* Tipping_PointUITestsLaunchTests.swift in Sources */,
+				95AC170A290FF9DA00E5FEAA /* Testbench.swift in Sources */,
+				95AC1716290FFCBE00E5FEAA /* MuskratService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		953287D0290C0379006CB01F /* PBXTargetDependency */ = {
+		95AC170C290FF9DA00E5FEAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 953287B7290C0378006CB01F /* Tipping Point */;
-			targetProxy = 953287CF290C0379006CB01F /* PBXContainerItemProxy */;
-		};
-		953287DA290C0379006CB01F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 953287B7290C0378006CB01F /* Tipping Point */;
-			targetProxy = 953287D9290C0379006CB01F /* PBXContainerItemProxy */;
+			targetProxy = 95AC170B290FF9DA00E5FEAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -641,18 +587,17 @@
 			};
 			name = Release;
 		};
-		953287E6290C0379006CB01F /* Debug */ = {
+		95AC170D290FF9DA00E5FEAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N4K7Y69MC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.marquiskurt.Tipping-PointTests";
+				PRODUCT_BUNDLE_IDENTIFIER = net.marquiskurt.Testbench;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -661,59 +606,22 @@
 			};
 			name = Debug;
 		};
-		953287E7290C0379006CB01F /* Release */ = {
+		95AC170E290FF9DA00E5FEAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N4K7Y69MC5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.marquiskurt.Tipping-PointTests";
+				PRODUCT_BUNDLE_IDENTIFIER = net.marquiskurt.Testbench;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipping Point.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tipping Point";
-			};
-			name = Release;
-		};
-		953287E9290C0379006CB01F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N4K7Y69MC5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.marquiskurt.Tipping-PointUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Tipping Point";
-			};
-			name = Debug;
-		};
-		953287EA290C0379006CB01F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N4K7Y69MC5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.marquiskurt.Tipping-PointUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Tipping Point";
 			};
 			name = Release;
 		};
@@ -738,20 +646,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		953287E5290C0379006CB01F /* Build configuration list for PBXNativeTarget "Tipping PointTests" */ = {
+		95AC170F290FF9DA00E5FEAA /* Build configuration list for PBXNativeTarget "Testbench" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				953287E6290C0379006CB01F /* Debug */,
-				953287E7290C0379006CB01F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		953287E8290C0379006CB01F /* Build configuration list for PBXNativeTarget "Tipping PointUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				953287E9290C0379006CB01F /* Debug */,
-				953287EA290C0379006CB01F /* Release */,
+				95AC170D290FF9DA00E5FEAA /* Debug */,
+				95AC170E290FF9DA00E5FEAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

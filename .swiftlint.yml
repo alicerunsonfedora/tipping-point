@@ -1,0 +1,13 @@
+disabled_rules:
+  - opening_brace
+
+opt_in_rules:
+  - inclusive_language
+
+custom_rules:
+  unneeded_filter:
+    name: "Possible Unneeded Filter"
+    regex: ".filter(\\s?)\\{(.+)\\}\\s+for (\\w+) in (\\w+) \\{\\s*(.+)\\s*\\}"
+    message: "Filter might be unneeded; try using the for-where clause to iterate over a filter."
+    severity: warning
+
