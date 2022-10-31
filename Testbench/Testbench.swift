@@ -5,8 +5,8 @@
 //  Created by Marquis Kurt on 10/31/22.
 //
 
-import XCTest
 @testable import Tipping_Point
+import XCTest
 
 /// A test case for the networking layer.
 class ServiceLayerTests: XCTestCase {
@@ -17,11 +17,11 @@ class ServiceLayerTests: XCTestCase {
     var service: SpaceXNetwork?
 
     override func setUpWithError() throws {
-        self.service = SpaceXNetwork(session: MuskratService())
+        service = SpaceXNetwork(session: MuskratService())
     }
 
     override func tearDownWithError() throws {
-        self.service = nil
+        service = nil
     }
 
     /// Returns an endpoint that matches a given error.
@@ -106,17 +106,18 @@ class ServiceLayerTests: XCTestCase {
                 err: .decodeFailure(DecodingError.dataCorrupted(context))
             ),
             completion: { (result: DecodedResponse) in
-            switch result {
-            case .success(let data):
-                XCTFail("Success case shouldn't be reached on unauthorized endpoints: \(data)")
-            case .failure(let error):
-                switch error {
-                case .decodeFailure(let error):
-                    XCTAssertNotNil(error)
-                default:
-                    XCTFail("Received non-decoding error: \(error.localizedDescription)")
+                switch result {
+                case .success(let data):
+                    XCTFail("Success case shouldn't be reached on unauthorized endpoints: \(data)")
+                case .failure(let error):
+                    switch error {
+                    case .decodeFailure(let error):
+                        XCTAssertNotNil(error)
+                    default:
+                        XCTFail("Received non-decoding error: \(error.localizedDescription)")
+                    }
                 }
             }
-        })
+        )
     }
 }

@@ -17,6 +17,6 @@ protocol SpaceXNetworkServiceDelegate: AnyObject {
 
 extension URLSession: SpaceXNetworkServiceDelegate {
     func get(with request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
-        self.dataTask(with: request, completionHandler: completion).resume()
+        dataTask(with: request, completionHandler: completion).resume()
     }
 }

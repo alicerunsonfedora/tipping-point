@@ -77,7 +77,7 @@ class SpaceXNetwork {
                 completion(.failure(.statusNotOk(response.statusCode)))
                 return
             }
-            guard let data else {
+            guard let data = data else {
                 completion(.failure(.badData))
                 return
             }

@@ -34,7 +34,7 @@ class LaunchTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let viewModel,
+        guard let viewModel = viewModel,
               let cell = tableView.dequeueReusableCell(LaunchTableViewCell.self, for: indexPath)
         else {
             return LaunchTableViewCell()

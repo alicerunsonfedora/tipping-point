@@ -17,7 +17,7 @@ class MuskratService: SpaceXNetworkServiceDelegate {
     }
 
     private func httpResponse(from url: URL, code: Int = 200) -> HTTPURLResponse? {
-        return HTTPURLResponse(url: url, statusCode: code, httpVersion: "1.1", headerFields: nil)
+        HTTPURLResponse(url: url, statusCode: code, httpVersion: "1.1", headerFields: nil)
     }
 
     func get(with request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
